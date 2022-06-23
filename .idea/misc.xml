@@ -3,8 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/font-v26/poppin.xml" value="0.26145833333333335" />
+        <entry key="app/src/main/res/font/font.xml" value="0.21462163317657118" />
+        <entry key="app/src/main/res/font/poppin.xml" value="0.4155844627664149" />
         <entry key="app/src/main/res/layout-sw600dp/fragment_item_detail.xml" value="0.1656479217603912" />
+        <entry key="app/src/main/res/layout/activity_item_detail.xml" value="0.19067977768277042" />
         <entry key="app/src/main/res/layout/fragment_item_detail.xml" value="0.31476449275362317" />
+        <entry key="app/src/main/res/layout/fragment_item_list.xml" value="0.19067977768277042" />
+        <entry key="app/src/main/res/layout/item_list_content.xml" value="0.5533460984835518" />
       </map>
     </option>
   </component>
