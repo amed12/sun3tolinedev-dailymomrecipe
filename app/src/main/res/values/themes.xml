@@ -23,12 +23,17 @@
 
     <style name="Theme.DailyMomRecipe.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="ShapeAppearanceOverlay.App.CornerSize10Percent" parent="">
+        <item name="cornerSize">10%</item>
+    </style>
+
     <style name="CustomFont.Regular">
         <item name="android:fontFamily">@font/poppinregular</item>
     </style>
 
     <style name="CustomFont.Bold">
         <item name="android:fontFamily">@font/poppinbold</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
     <style name="CustomFont.Label" parent="CustomFont.Regular">
@@ -112,7 +117,7 @@
     </style>
 
     <style name="CustomFont.Small" parent="android:TextAppearance.Small">
-        <item name="android:fontFamily">@font/Poppins-Regular</item>
+        <item name="android:fontFamily">@font/poppinregular</item>
     </style>
 
     <style name="CustomFont.Small.Bold" parent="android:TextAppearance.Small">

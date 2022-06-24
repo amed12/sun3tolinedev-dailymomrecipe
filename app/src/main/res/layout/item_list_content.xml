@@ -1,23 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="horizontal">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="20dp">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_title"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@style/ShapeAppearance.Material3.LargeComponent"
+        tools:src="@tools:sample/backgrounds/scenic"
+        />
 
-    <TextView
-        android:id="@+id/id_text"
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lbl_title"
+        style="@style/CustomFont.Paragraph.Bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/img_title"
+        tools:text="how to make a baby" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:textAppearance="?attr/textAppearanceListItem" />
+        android:backgroundTint="@android:color/transparent"
+        android:padding="0dp"
+        android:src="@android:drawable/ic_menu_info_details"
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_title"
+        app:layout_constraintEnd_toEndOf="@+id/img_title"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toEndOf="@+id/lbl_title"
+        app:layout_constraintTop_toTopOf="@+id/lbl_title" />
 
-    <TextView
-        android:id="@+id/content"
-        android:layout_width="wrap_content"
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_creator"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lbl_title"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_title"
+        app:shapeAppearance="@style/ShapeAppearance.Material3.LargeComponent"
+        tools:src="@tools:sample/avatars" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lbl_creator"
+        style="@style/CustomFont.Small"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:textAppearance="?attr/textAppearanceListItem"
-        style="@style/CustomFont.Tiny.Bold"
-        tools:text="Hal sdfo"/>
-</LinearLayout>
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_creator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_creator"
+        app:layout_constraintTop_toTopOf="@+id/img_creator"
+        tools:text="how to make a baby" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
